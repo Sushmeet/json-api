@@ -1,5 +1,6 @@
 # Install
 node v10.14.1 and above. This should install npm package manager for you as well.
+The database being used is mysql 8.0.15
 Once you have node and npm installed from the root of the project
 ```
 npm install
