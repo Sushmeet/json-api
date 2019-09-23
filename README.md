@@ -25,6 +25,13 @@ knex migrate:latest
 
 
 # Test
+
+To run end to end tests
+``` 
+npm test
+```
+
+
 ### Get All Products 
 ```
 curl --request GET \
