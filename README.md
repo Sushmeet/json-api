@@ -1,4 +1,5 @@
-Install node v10.14.1 and above. This should install npm package manager for you as well.
+# Install
+node v10.14.1 and above. This should install npm package manager for you as well.
 Once you have node and npm installed from the root of the project
 ```
 npm install
