@@ -1,9 +1,12 @@
 Install 
 node v10.14.1 and above. This should install npm package manager for you as well.
+npm install 
 
 
 db Migrations
-Ensure that a products database is already created
+Ensure that a products database is already created. This application does not ensure that.
+// to create the database
+CREATE SCHEMA `products` ;
 
 npm i knex -g (install knex globally)
 
@@ -34,31 +37,17 @@ curl --request GET \
 "category": "apparel"
 }'
  ```
-  
+
+Get a product by category and with pagination supported by limit and offset
+```
+curl --request GET \
+  --url 'http://localhost:3000/v1/products?category=apparel&limit=5&offset=2'
+ ```
 
 
 
-Product API
-Use Knex migrations to create a user database schema.
-npm i knex -g
-knex migrate:make create_products_table
-knex migrate:latest
-knex migrate:rollback
-
-// to create the database
-CREATE SCHEMA `products` ;
-
-// to drop the database 
-DROP DATABASE `products`;
+Known Bugs
+knex migrate:rollback (is not working.)
 
 
-
-WHERE Location = 'US'
-    OR Location IS NULL
-
-
-search product by category...
-knex.select('*').from('users').limit(10).offset(30)
-Outputs:
-select * from `users` limit 10 offset 30
 
