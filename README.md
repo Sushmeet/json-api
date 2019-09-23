@@ -1,22 +1,23 @@
-Install 
-node v10.14.1 and above. This should install npm package manager for you as well.
-npm install 
+Install node v10.14.1 and above. This should install npm package manager for you as well.
+Once you have node and npm installed from the root of the project
+```
+npm install
+```
 
 
-db Migrations
+# db Migrations
 Ensure that a products database is already created. This application does not ensure that.
-// to create the database
+```
 CREATE SCHEMA `products` ;
-
+```
 npm i knex -g (install knex globally)
 
 Now to execute migrations
 knex migrate:latest
 
 
-
-Test
-Get All Products 
+# Test
+### Get All Products 
 ```
 curl --request GET \
   --url http://localhost:3000/v1/products
@@ -46,8 +47,10 @@ curl --request GET \
 
 
 
-Known Bugs
+# Known Bugs
 knex migrate:rollback (is not working.)
+
+
 
 
 
