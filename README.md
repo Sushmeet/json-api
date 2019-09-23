@@ -12,11 +12,16 @@ npm install
 Ensure that a products database is already created. This application does not ensure that.
 ```
 CREATE SCHEMA `products` ;
+
 ```
-npm i knex -g (install knex globally)
+```
+npm i knex -g 
+```
 
 Now to execute migrations
+```
 knex migrate:latest
+```
 
 
 # Test
