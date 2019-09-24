@@ -76,11 +76,15 @@ curl --request GET \
 # Known Bugs
 Graceful Shutdown of application.
 
+```
 SIGINT Interrupt signal detected and exiting node process now.
 Process is terminated
 Process is terminated
 ^CSIGINT Interrupt signal detected and exiting node process now.
 Terminated: 15
+```
+
+
 
 
 
