@@ -20,6 +20,12 @@ Now to execute migrations
 ```
 knex migrate:latest
 ```
+To rollback migrations
+```
+knex migrate:rollback
+
+```
+
 
 # start
 Application runs on port 3000
