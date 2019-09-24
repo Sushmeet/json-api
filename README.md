@@ -43,6 +43,7 @@ npm test
 
 
 ### Get All Products 
+Get all Products
 ```
 curl --request GET \
   --url http://localhost:3000/v1/products
@@ -73,8 +74,13 @@ curl --request GET \
 
 
 # Known Bugs
-knex migrate:rollback (is not working.)
+Graceful Shutdown of application.
 
+SIGINT Interrupt signal detected and exiting node process now.
+Process is terminated
+Process is terminated
+^CSIGINT Interrupt signal detected and exiting node process now.
+Terminated: 15
 
 
 
