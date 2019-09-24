@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server",
-    "test": "jest --forceExit"
+    "test": "jest --forceExit --detectOpenHandles"
   },
   "author": "Sushmeet",
   "license": "ISC",

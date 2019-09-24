@@ -20,7 +20,7 @@ const insertProduct = ({ name, description, category, brand, tags } = {}) => {
     });
 };
 
-const retrieveProducts = ({ category, limit = 3, offset = 0 } = {}) => {
+const retrieveProducts = ({ category, limit , offset } = {}) => {
   if (!category) {
     return _getallProducts(limit, offset);
   }
