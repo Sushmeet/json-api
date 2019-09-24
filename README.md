@@ -73,7 +73,7 @@ curl --request GET \
 
 
 # Improvements
-Add more end to end tests for Get Products and also apply the filters of category and limit etc.
+Add more end to end tests for Get Products to test filtering of results by category and showcasing pagination by limit and offset.
 Unit tests are missing for the application.
 
 
