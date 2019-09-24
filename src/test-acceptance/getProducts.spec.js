@@ -1,6 +1,6 @@
-const app = require("../../server");
+const app = require("../../app");
 const request = require("supertest");
-const db = require("knex")(require("../db/knexfile"));
+const db = require("knex")(require("../../knexfile"));
 
 describe("getProducts", () => {
   beforeAll(() => {

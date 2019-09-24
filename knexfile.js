@@ -1,5 +1,9 @@
 const knexConfiguration = {
     client: 'mysql',
+    migrations: {
+        tableName: 'knex_migrations',
+        directory: `${ __dirname }/src/db/migrations`
+      },
     connection: {
         host: 'localhost',
         user: 'centric',

@@ -1,4 +1,4 @@
-const db = require("knex")(require("../db/knexfile"));
+const db = require("knex")(require("../../knexfile"));
 const uuid = require("uuid");
 
 const insertProduct = ({ name, description, category, brand, tags } = {}) => {
