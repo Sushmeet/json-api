@@ -9,20 +9,30 @@ npm install
 
 
 # db Migrations
-Ensure that a products database is already created. This application does not ensure that.
-```
-CREATE SCHEMA `products` ;
-
-```
+Ensure that a products database is already created.
+Install knex globalls to handle database migrations.
 ```
 npm i knex -g 
+
 ```
 
 Now to execute migrations
 ```
 knex migrate:latest
 ```
+To rollback migrations
+```
+knex migrate:rollback
 
+```
+
+
+# start
+Application runs on port 3000
+```
+npm start
+
+```
 
 # Test
 
@@ -33,6 +43,7 @@ npm test
 
 
 ### Get All Products 
+Get all Products
 ```
 curl --request GET \
   --url http://localhost:3000/v1/products
@@ -61,9 +72,24 @@ curl --request GET \
  ```
 
 
+# Improvements
+Add more end to end tests for Get Products and also apply the filters of category and limit etc.
+Unit tests are missing for the application.
+
 
 # Known Bugs
-knex migrate:rollback (is not working.)
+Graceful Shutdown of application.
+Currently you might have to Ctrl C twice to exist
+application. 
+
+```
+SIGINT Interrupt signal detected and exiting node process now.
+Process is terminated
+Process is terminated
+^CSIGINT Interrupt signal detected and exiting node process now.
+Terminated: 15
+```
+
 
 
 
