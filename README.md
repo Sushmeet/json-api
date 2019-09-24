@@ -9,13 +9,11 @@ npm install
 
 
 # db Migrations
-Ensure that a products database is already created. This application does not ensure that.
-```
-CREATE SCHEMA `products` ;
-
-```
+Ensure that a products database is already created.
+Install knex globalls to handle database migrations.
 ```
 npm i knex -g 
+
 ```
 
 Now to execute migrations
@@ -23,6 +21,12 @@ Now to execute migrations
 knex migrate:latest
 ```
 
+# start
+Application runs on port 3000
+```
+npm start
+
+```
 
 # Test
 
