@@ -72,9 +72,15 @@ curl --request GET \
  ```
 
 
+# Improvements
+Add more end to end tests for Get Products and also apply the filters of category and limit etc.
+Unit tests are missing for the application.
+
 
 # Known Bugs
 Graceful Shutdown of application.
+Currently you might have to Ctrl C twice to exist
+application. 
 
 ```
 SIGINT Interrupt signal detected and exiting node process now.
